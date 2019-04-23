@@ -1,4 +1,4 @@
-/*global $, window, document*/
+/*global $, window*/
 $(function () {
 
     "use strict";
@@ -60,7 +60,7 @@ $(function () {
         });
     });
     //SCROLL TO SECTION
-    $(".collapse li a, button").on("click", function (event) {
+    $(".collapse li a, .about button, .carousel-caption a").on("click", function (event) {
         event.preventDefault();
         $("html, body").animate({
             scrollTop: $("#" + $(this).data("scroll")).offset().top - 49
